@@ -1,0 +1,267 @@
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #1A2238;
+    color: #eaeaea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    margin-right: auto;
+    display: flex;
+    gap: 8px;
+}
+
+.logo-img {
+    margin-left: 10px;
+    width: 60px;
+    height: 60px;
+
+
+}
+
+.logo-title {
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -ms-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+}
+
+.logo :hover {
+    color: orange;
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+}
+
+/* nav{
+    width: 100vh;
+    height: 100%;
+} */
+nav ul {
+    display: flex;
+    padding: 20px;
+
+}
+
+a {
+    color: #eaeaea;
+    text-decoration: none;
+
+}
+
+li {
+    list-style-type: none;
+    padding: 10px;
+
+}
+
+li a {
+    display: inline-block;
+    transition: all .5s ease 0s;
+    -webkit-transition: all .5s ease 0s;
+    -moz-transition: all .5s ease 0s;
+    -ms-transition: all .5s ease 0s;
+    -o-transition: all .5s ease 0s;
+
+}
+
+li a:hover {
+    color: orange;
+    transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+
+}
+
+.btn {
+    margin-right: 10px;
+    border: none;
+    padding: 10px;
+    font-size: .9em;
+    background-color: orange;
+    color: #ffff;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 70px 0;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+.logo-img{
+    border-radius: 100%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
+}
+.title {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: helvetica;
+}
+
+.description {
+    font-size: 14px;
+    font-weight: bolder;
+    font-family: helvetica;
+}
+
+.icon {
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    padding: 4px;
+}
+
+.img-foto {
+    width: 100%;
+    max-width: 500px;
+    max-height: auto;
+    padding: 10px;
+    border-radius: 100% ;
+    -webkit-border-radius: 100% ;
+    -moz-border-radius: 100% ;
+    -ms-border-radius: 100% ;
+    -o-border-radius: 100% ;
+}
+
+.parallax {
+    background-image: url('assets/foto/14901d5d-fbaa-41a0-90b7-2afb1dfaf960.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+.konten-tentang {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #1A2238;
+    color: #eaeaea;
+    padding: 20px;
+}
+
+.mt-10 {
+    margin-top: 20px;
+}
+
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+.card-title {
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+
+.card-description {
+    font-size: 15px;
+    margin-top: 4px;
+}
+
+.card-item {
+    width: 25%;
+    text-align: center;
+    color: #222;
+    background: #f7f7f7;
+    padding: 20px;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.5);
+    min-height: 200px;
+    max-height: 300px;
+}
+
+footer {
+    padding: 25px;
+    background-color: #1A2238;
+    color: #eaeaea;
+    text-align: center;
+}
+
+
+
+
+
+@media screen and (max-width:500px) {
+    .card {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .card-item {
+        width: 100%;
+        opacity: 0.9;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .img-foto {
+        padding: 0;
+    }
+
+    .intro {
+        margin-top: 20px;
+    }
+
+    nav {
+        position: fixed;
+        bottom: 0;
+        background-color: #1A2238;
+        z-index: 9;
+        width: 100%;
+    }
+
+    footer {
+        margin-bottom: 70px;
+        margin-top: 70px;
+    }
+}
